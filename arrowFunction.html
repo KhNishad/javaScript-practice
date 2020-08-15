@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // function Person(first, last, age, gender, interests) {
+    //         this.name = {
+    //             first: first,
+    //             last: last
+    //         };
+    //         this.age = age;
+    //         this.gender = gender;
+    //         this.interests = interests;
+    //         this.bio = function () {
+    //             alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    //         };
+    //         this.greeting = function () {
+    //             alert('Hi! I\'m ' + this.name.first + '.');
+    //         };
+    //     }
+    //     let person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+    //     person1.bio()
+    //     person1.greeting()
+
+    // function createNewPerson(name) {
+    //         const obj = {};
+    //         obj.name = name;
+    //         obj.greeting = function () {
+    //             alert('Hi! I\'m ' + obj.name + '.');
+    //         }
+    //          return obj;
+    //     }
+
+    // function Person(name) {
+    //         this.name = name;
+    //         this.greeting = function () {
+    //             alert('Hi! I\'m ' + this.name + '.');
+    //         };
+    //     }
+    // let person1 = new Person('Bob');
+    // let person2 = new Person('Sarah');
+
+    // person1.name
+    //     person1.greeting()
+    //     person2.name
+    //     person2.greeting()
+
+        // const salva = createNewPerson('Salva');
+        //     salva.name;
+        //     salva.greeting();
+
+
+
+//   arrow function starts
+
+//  const hello = (name) =>   'Joy bangla ' + name
+
+//  document.write(hello('Nishad'))
+
+// arrow function assignment
+
+let myW = [{
+    title: 'learn javascript',
+    status: false,
+
+},
+{
+  title : 'phd',
+  status: false,
+},
+{
+    title: 'cricket',
+    status: true,
+},
+{title: 'fight' , status : true},
+{title: 'game', status : true}]
+
+
+ const did  = myW.filter((i) => {
+     if(i.status === false)
+     {
+         return i.title
+     }
+ })
+ console.log(did);
+ 
+ 
+
+
+    </script>
+</body>
+</html>

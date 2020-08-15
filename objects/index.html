@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//    const  person = {
+//         name: ['Rony','Saju'],
+//         age:20,
+//         work: 'teacher',
+//     }
+//     document.write(person.name[1]+' is a '+person.work+', His age is '+person.age);
+    
+  
+    let myW = {
+         
+        class: 0,
+        exam:0,
+        sports: 0,
+
+        addclass: function (num) {
+           myW.class = myW.class + num 
+           document.write('Today you Have '+myW.class+ ' Classes')
+            
+        },
+        addsports: function (num) {
+                this.sports  = this.sports +num;
+                document.write('<br>'+'Today you have '+this.sports+' matches')
+            
+
+        },
+        addexam: function (num) {
+            this.exam = this.exam + num;
+            document.write("<br>"+"today you have "+this.exam+ " exams")
+        }
+    }
+    myW.addclass(9)
+    myW.addsports(2)
+    myW.addexam(0)
+    
+    
+    </script>
+</body>
+</html>

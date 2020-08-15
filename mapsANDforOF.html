@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var varsity = {
+
+         name: 'iubat',
+        type: 'private',
+        status: false
+    }
+    var person =  {
+        name: 'Nihsad',
+        type : 'student',
+        status: true
+    }
+    var game  = {
+         name: 'pubg',
+        type: 'war',
+        status: true
+    } 
+
+    let users  = new Map()
+    // console.log(typeof users);
+    users.set('game', game)
+    users.set('person', person)
+    users.set('varsity', varsity)
+    //  console.log(users);
+    //  console.log(users.get('game'))
+    //   console.log(users.keys())
+    //   console.log(users.values())
+
+    // for of loop 
+
+    // for (const  value of users.values()) {
+    //     console.log(value.name);
+        
+    // }
+
+    // for (const [key, value] of users.entries()) {
+    //     console.log(key + " = " + value.name);
+        
+    // }
+
+    // for each loops
+
+    //  users.forEach(( value , key ) =>  console.log(key + " = " + value.name) )
+
+
+    // array of array
+
+    let myAr = [['nishad',1],['hadi',2] , ['alvi',3]]
+    let mymap  = new Map(myAr)
+    
+    console.log(Array.from(mymap))
+
+    // var newmap  = new Map(myAr)
+    // console.log(newmap);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="bg">Enter the choice :</label>
+    <select id="bg">
+        <option value="white">White</option>
+        <option value="red">Red</option>
+    </select>
+    <h1>This is Background</h1>
+
+
+    <script>
+    const  select = document.querySelector('select');
+    const  html = document.querySelector('html');
+    document.body.style.padding = '10px';
+
+     function change(color,text) {
+          html.style.backgroundColor = color;
+          html.style.color  = text;
+     }
+     
+     select.onchange = function () {
+         (select.value === 'white')? change('white','black') : change('red','white');
+     }
+    
+    </script>
+</body>
+</html>
